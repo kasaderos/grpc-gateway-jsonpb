@@ -8,10 +8,11 @@ import (
 	"encoding/base64"
 	"fmt"
 
-	"github.com/mechta-market/nsi/internal/domain/lib/jsonpb/encoding/json"
-	"github.com/mechta-market/nsi/internal/domain/lib/jsonpb/errors"
-	"github.com/mechta-market/nsi/internal/domain/lib/jsonpb/genid"
-	"github.com/mechta-market/nsi/internal/domain/lib/jsonpb/order"
+	"jsonpb/encoding/json"
+	"jsonpb/errors"
+	"jsonpb/genid"
+	"jsonpb/order"
+
 	"google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/reflect/protoreflect"
 	"google.golang.org/protobuf/reflect/protoregistry"

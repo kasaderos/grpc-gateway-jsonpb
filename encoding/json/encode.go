@@ -11,7 +11,7 @@ import (
 	"strings"
 	"unicode/utf8"
 
-	"github.com/mechta-market/nsi/internal/domain/lib/jsonpb/errors"
+	"jsonpb/errors"
 )
 
 // kind represents an encoding type.

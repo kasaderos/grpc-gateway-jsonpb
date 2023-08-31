@@ -10,8 +10,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/mechta-market/nsi/internal/domain/lib/jsonpb/errors"
-	"github.com/mechta-market/nsi/internal/domain/lib/jsonpb/genid"
+	"jsonpb/errors"
+	"jsonpb/genid"
+
 	"google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/reflect/protoreflect"
 )

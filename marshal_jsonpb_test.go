@@ -5,10 +5,15 @@ import (
 	"time"
 
 	"github.com/grpc-ecosystem/grpc-gateway/v2/runtime"
-	"github.com/mechta-market/nsi/pkg/proto/nsi_v1"
 	"github.com/stretchr/testify/require"
 	"google.golang.org/protobuf/types/known/timestamppb"
 )
+
+type TestStruct struct {
+	Id        string
+	ManagerId int64
+	CreatedAt *timestamppb.Timestamp
+}
 
 func TestJSONPbMarshal(t *testing.T) {
 	// our marshaller
@@ -17,7 +22,7 @@ func TestJSONPbMarshal(t *testing.T) {
 
 	createdAt := time.Date(2023, 8, 29, 0, 0, 0, 0, time.UTC)
 
-	st := &nsi_v1.ProductCategorySt{
+	st := &TestStruct{
 		Id:        "id",
 		ManagerId: 1 << 54,
 		CreatedAt: timestamppb.New(createdAt),
